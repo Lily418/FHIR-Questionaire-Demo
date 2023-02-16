@@ -1,0 +1,19 @@
+{
+  "name": "shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/fhir": "^0.0.35",
+    "fhir": "^4.11.2",
+    "jest": "^29.4.3",
+    "ts-jest": "^29.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0"
+  }
+}

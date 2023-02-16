@@ -1,0 +1,21 @@
+service: leva-questionnaire-backend
+
+provider:
+  name: aws
+  environment:
+    DATABASE_SECRET: ${file(./config.${opt:stage, 'dev'}.json):DATABASE_SECRET}
+    NODE_ENV: ${file(./config.${opt:stage, 'dev'}.json):NODE_ENV}
+  runtime: nodejs18.x
+
+functions:
+  api:
+    handler: dist/index.handler
+    events:
+      - httpApi: "*"
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript-express
+
+package:
+  excludeDevDependencies: true

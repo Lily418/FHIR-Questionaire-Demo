@@ -1,0 +1,121 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "leva-onboarding",
+  "name": "Leva Onboarding Assesment",
+  "date": "2023-02-14",
+  "description": "Example onboarding questionnaire",
+  "title": "Leva Onboarding Assesment",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "Do you have one of the following conditions that you are hoping to discuss Medical Cannabis\ntreatment for?",
+      "type": "open-choice",
+      "repeats": true,
+      "required": true,
+      "answerOptions": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Abdominal pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "Facial pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "3",
+            "display": "Cancer-related pain"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "4",
+            "display": "Headache"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "5",
+            "display": "Multiple sclerosis"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "6",
+            "display": "Back and neck pain"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Have you ever had an episode of schizophrenia and/or psychosis?",
+      "type": "choice",
+      "answerOptions": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "No"
+          }
+        }
+      ],
+      "required": true
+    },
+    {
+      "linkId": "3",
+      "text": "Have you ever had any medical problems regarding your:",
+      "type": "choice",
+      "answerOptions": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "Kidney"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "2",
+            "display": "Liver"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "3",
+            "display": "None"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "type": "boolean",
+      "text": "I want to receive updates about my care from Leva Clinic as well as latest pain management\nnews (Optional)",
+      "required": false
+    },
+    {
+      "linkId": "privacy-policy-agree",
+      "type": "choice",
+      "text": "By submitting this form, you agree to Leva Clinic privacy policy and terms and conditions.",
+      "repeats": true,
+      "required": true,
+      "answerOptions": [
+        {
+          "valueCoding": {
+            "code": "1",
+            "display": "I agree to the privacy policy and terms and conditions."
+          }
+        }
+      ]
+    }
+  ]
+}
